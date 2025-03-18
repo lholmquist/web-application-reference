@@ -30,8 +30,8 @@ The team at Red Hat has been involved in several Web Component projects and have
 
 Two Web Component "Systems" at Red Hat are
 
-* [PatternFly Elements](https://patternflyelements.org/) (aka PFE)  (“upstream”)
-* [Red Hat Design System](https://ux.redhat.com/) (aka RHDS) (“downstream”)
+- [PatternFly Elements](https://patternflyelements.org/) (aka PFE)  (“upstream”)
+- [Red Hat Design System](https://ux.redhat.com/) (aka RHDS) (“downstream”)
 
 ### Advantages and Ideal Use Cases
 
@@ -44,7 +44,6 @@ a single implementation of complex ui patterns can help teams to ship accessible
 #### Work Across frameworks / Cross Team Collaboration
 
 the same `<rh-card>` which works in drupal can work the same way in react, or in an ejs template, and the teams working with those components can transfer that knowledge to other projects, instead of reimplementing design specs for each new framework.
-
 
 #### Design Systems
 
