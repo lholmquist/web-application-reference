@@ -24,27 +24,60 @@ Broadly speaking, every web component is a custom element - a specific, globally
 
 ## Guidance
 
+### Our Experiences Using Web Components at Red Hat
+
+The team at Red Hat has been involved in several Web Component projects and have learned a good amount about Web Components and how to write them
+
+Two Web Component "Systems" at Red Hat are
+
+* [PatternFly Elements](https://patternflyelements.org/) (aka PFE)  (“upstream”)
+* [Red Hat Design System](https://ux.redhat.com/) (aka RHDS) (“downstream”)
+
 ### Advantages and Ideal Use Cases
 
-- mix and matching components
-- a la carte / low impact development
-- cross-team collaboration
-- design systems
-- migrating piecemeal from older frameworks
+Through the teams experience with Web Components, we've identified a few different pros and cons when using Web Components and what type of applications you might want to use them with.
 
-### Potential Gotchas When Using Web Components
+#### Accessibility
+
+a single implementation of complex ui patterns can help teams to ship accessible experiences with less fuss
+
+#### Work Across frameworks / Cross Team Collaboration
+
+the same `<rh-card>` which works in drupal can work the same way in react, or in an ejs template, and the teams working with those components can transfer that knowledge to other projects, instead of reimplementing design specs for each new framework.
+
+
+#### Design Systems
+
+The case for web component-based design systems is strong because of encapsulation / knowledge transfer / future proofing as described above. These can also include a certain amount of business logic like analytics code, personalization, etc (ymmv)
+
+#### Microfrontends
+
+This is another case where web components and shadow dom shine, as the encapsulation guarantees and framework interoperability aspects lend themselves naturally to enabling teams to cooperate while maintaining boundaries.
+
+#### Greenfield SPA
+
+There’s an argument to be made from a loading / rendering perf and future-proofing perspective to start new projects with a web component framework (like lit, stencil, hybrids, FAST, etc) in place of traditional / legacy framework (angular, react, vue)
+
+docs.redhat.com (a greenfield project) leaned heavily on RHDS web components, and that helped ship the project faster
+
+#### Piecemeal migration
+
+The framework interoperability aspect enables upgrading complex projects on a component-by-component basis. Rather than break the entire app when bumping the underlying frontend-framework from vX to vY, replace components one by one with interoperable web components.
+
+### Common Gripes
+
+As with all programming models, there are some gotchas that the team has encountered:
 
 - cross-root aria
+  - To prevent a11y failures, signifacant expertise might be needed
+
 - double-registration errors
 - server-side tooling / ssr limitations
 - shadow dom can be a double edged sword
 
-### Our Experiences Using Web Components at Red Hat
+- Unit Testing
+  - JSDOM/Jest may not work with your customer elements
 
-- Design Systems
-  - PFE
-  - RHDS
-- HTML-first / MPAs
-- SPA usage (high javascript, state-management)
+### General Concensus
 
-## Further Reading
+If you have a team with web platform experience, that always have an MDN tab open, and you’re hopeful to leverage current and future web standards like PWA, then you’re likely to succeed. If on the other hand you don’t have much senior experience or depth of knowledge on web platform features, you may run into issues. However, your teams that overcome those issues will gain platform knowledge and not just framework knowledge.
