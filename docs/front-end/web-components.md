@@ -75,7 +75,7 @@ As with all programming models, there are some gotchas that the team has encount
 - shadow DOM can be a double edged sword. Teams which are unused to it may find it difficult to work with at first
 
 - Unit Testing
-  - JSDOM/Jest may not work with your customer elements
+  - JSDOM/Jest may not work with your custom elements: teams may have to author their components with node environments / DOM shims in mind, which can increase payloads to the client in some cases.
 
 ### General Concensus
 
