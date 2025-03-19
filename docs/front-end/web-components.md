@@ -72,7 +72,7 @@ As with all programming models, there are some gotchas that the team has encount
 
 - double-registration errors when bundling modules. we recommend using a global import map for each page
 - server-side tooling / ssr limitations. When using the `lit-ssr` library, hydration mismatches when client initial state differs from server rendered state can be difficult to recover from.
-- shadow dom can be a double edged sword
+- shadow DOM can be a double edged sword. Teams which are unused to it may find it difficult to work with at first
 
 - Unit Testing
   - JSDOM/Jest may not work with your customer elements
