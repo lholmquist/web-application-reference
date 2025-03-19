@@ -72,7 +72,7 @@ As with all programming models, there are some gotchas that the team has encount
   - To prevent a11y failures, signifacant expertise might be needed
 
 - double-registration errors when bundling modules. we recommend using a global import map for each page
-- <abbr title="Server-side Rendering">SSR</abbr> gotchas. When using the `lit-ssr` library to generate [declarative shadow DOM templates](https://web.dev/articles/declarative-shadow-dom), hydration mismatches when client initial state differs from server rendered state can be difficult to recover from.
+- Server-side Rendering (SSR) gotchas. When using the `lit-ssr` library to generate [declarative shadow DOM templates](https://web.dev/articles/declarative-shadow-dom), hydration mismatches when client initial state differs from server rendered state can be difficult to recover from.
 - shadow DOM can be a double edged sword. Teams which are unused to it may find it difficult to work with at first
 
 - Unit Testing
