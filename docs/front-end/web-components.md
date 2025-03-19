@@ -16,7 +16,7 @@ Broadly speaking, every web component is a custom element - a specific tag-name 
 
 ## Recommended Components
 
-- [Lit](https://lit.dev) (for authoring components)
+- [Lit](https://lit.dev) (library and framework for authoring components)
 - [Web Dev Server](https://modern-web.dev) / Web Test Runner (for unit tests and local dev)
 - [Custom Elements Manifest](https://github.com/webcomponents/custom-elements-manifest) (for ide support / docgen / codegen)
 - [PatternFly Elements](https://patternflyelements.org) Design System
