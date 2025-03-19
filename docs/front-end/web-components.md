@@ -79,4 +79,6 @@ As with all programming models, there are some gotchas that the team has encount
 
 ### General Concensus
 
-If you have a team with web platform experience, that always have an MDN tab open, and you’re hopeful to leverage current and future web standards like PWA, then you’re likely to succeed. If on the other hand you don’t have much senior experience or depth of knowledge on web platform features, you may run into issues. However, your teams that overcome those issues will gain platform knowledge and not just framework knowledge.
+Authoring web components: If you have a team with web platform experience, that always have an MDN tab open, and you’re hopeful to leverage current and future web standards like PWA, then you’re likely to succeed. If on the other hand you don’t have much senior experience or depth of knowledge on web platform features, you may run into issues. However, your teams that overcome those issues will gain platform knowledge and not just framework knowledge.
+
+Using web components inside of other major frameworks: our teams have consistently reported that consuming web components inside other frameworks is typically a turnkey developer experience which saves time and reduces duplication of effort.
