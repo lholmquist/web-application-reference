@@ -21,6 +21,7 @@ Broadly speaking, every web component is a custom element - a specific tag-name 
 - [Custom Elements Manifest](https://github.com/webcomponents/custom-elements-manifest) (for ide support / docgen / codegen)
 - [PatternFly Elements](https://patternflyelements.org) Design System
 - [Carbon Web Components](https://web-components.carbondesignsystem.com/) Design System
+- [Web Components Community Group](https://github.com/w3c/webcomponents-cg/)
 
 ## Guidance
 
