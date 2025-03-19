@@ -12,7 +12,7 @@ The [WHATWG](https://html.spec.whatwg.org/multipage/custom-elements.html) and [W
 
 These are collectively referred to as "web components", and represent the browsers' native component model for web developers.
 
-Broadly speaking, every web component is a custom element - a specific, globally-recognized tag-name which becomes associated with a class extending HTMLElement in JavaScript. Web components can also make use of the related technologies.
+Broadly speaking, every web component is a custom element - a specific tag-name which becomes associated with a class extending HTMLElement in JavaScript. Web components can also make use of the related technologies.
 
 ## Recommended Components
 
