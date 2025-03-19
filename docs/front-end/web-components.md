@@ -71,7 +71,7 @@ As with all programming models, there are some gotchas that the team has encount
   - To prevent a11y failures, signifacant expertise might be needed
 
 - double-registration errors when bundling modules. we recommend using a global import map for each page
-- server-side tooling / ssr limitations
+- server-side tooling / ssr limitations. When using the `lit-ssr` library, hydration mismatches when client initial state differs from server rendered state can be difficult to recover from.
 - shadow dom can be a double edged sword
 
 - Unit Testing
