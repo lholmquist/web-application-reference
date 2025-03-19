@@ -70,7 +70,7 @@ As with all programming models, there are some gotchas that the team has encount
 - cross-root aria
   - To prevent a11y failures, signifacant expertise might be needed
 
-- double-registration errors
+- double-registration errors when bundling modules. we recommend using a global import map for each page
 - server-side tooling / ssr limitations
 - shadow dom can be a double edged sword
 
