@@ -77,9 +77,17 @@ As with all programming models, there are some gotchas that the team has encount
 
 - Unit Testing
   - JSDOM/Jest may not work with your custom elements: teams may have to author their components with node environments / DOM shims in mind, which can increase payloads to the client in some cases.
+  - [@open-wc/testing](https://open-wc.org/docs/testing/testing-package/) is a testing framework that the team has had success with.
 
 ### General Concensus
 
 Authoring web components: If you have a team with web platform experience, that always have an MDN tab open, and you’re hopeful to leverage current and future web standards like PWA, then you’re likely to succeed. If on the other hand you don’t have much senior experience or depth of knowledge on web platform features, you may run into issues. However, your teams that overcome those issues will gain platform knowledge and not just framework knowledge.
 
 Using web components inside of other major frameworks: our teams have consistently reported that consuming web components inside other frameworks is typically a turnkey developer experience which saves time and reduces duplication of effort.
+
+Since Web Components rely on code that is already in the browser, they reduce the page load for the end user.
+
+#### Resources
+
+- [Vaadin lit vs Reac Performance Comparision](https://www.youtube.com/watch?v=CJYkwDTaHzY)
+- [Page Loading Comparison - 2023 Devconf.cz](https://bennypowers.dev/decks/devconf-brno-2023/#slide-27/step-1)
